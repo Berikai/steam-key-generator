@@ -38,17 +38,17 @@ namespace Steam_Key_Generator
         static String keyGenerator() {
             String theKey = "";
             for (int i = 0; i < 5; i++) {
-                theKey = theKey + charGenerator();
+                theKey += charGenerator();
             }
-            theKey = theKey + "-";
+            theKey += "-";
             for (int i = 0; i < 5; i++)
             {
-                theKey = theKey + charGenerator();
+                theKey += charGenerator();
             }
-            theKey = theKey + "-";
+            theKey += "-";
             for (int i = 0; i < 5; i++)
             {
-                theKey = theKey + charGenerator();
+                theKey += charGenerator();
             }
             return theKey;
         }
